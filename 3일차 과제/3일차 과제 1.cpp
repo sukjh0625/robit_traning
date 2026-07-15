@@ -2,33 +2,23 @@
 
 
 int main()
-{
-   
-    double num;
-    double sum = 0.0;
-    double maxv, minv;
-
-    for (int i = 1; i <= 5; ++i)
-    {
-        printf("write %d th number  ", i);
+{  double num;
+   double sum = 0.0;
+   double maxv, minv;
+   for (int i = 1; i <= 5; ++i)
+    { printf("write %d th number  ", i);
         scanf_s("%lf", &num);
-
-        if (i == 1) {
-            maxv = num;
-            minv = num;
-        }
-        else {
+           if (i == 1) 
+           {maxv = num;
+            minv = num;}
+            
+           else {
             if (num > maxv)
-            {
-                maxv = num;
-            }
+            {maxv = num;}
             if (num < minv)
-            {
-                minv = num;
-            }
+            { minv = num;}
                }
-        sum += num;
-    }
+        sum += num;}
     double ave = sum / 5;
 
     printf("result\n");
