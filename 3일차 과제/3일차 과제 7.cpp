@@ -11,48 +11,34 @@ int main() {
 
 
     int a = 1;
-    for (int i = 1; i <= n; i++) {
-        a = a * i;
-    }
+    for (int i = 1; i <= n; i++) 
+    { a = a * i; }
 
     int b = 1;
-    for (int i = 1; i <= (n - r); i++) {
-        b = b * i;
-    }
+    for (int i = 1; i <= (n - r); i++) 
+    { b = b * i; }
 
     int sunyul = a / b;
 
-
-
     int jsunyul = 1;
-    for (int i = 0; i < r; i++) {
-        jsunyul = jsunyul * n;
-    }
-
-
+    for (int i = 0; i < r; i++) 
+     { jsunyul = jsunyul * n;  }
 
     int c = 1;
-    for (int i = 1; i <= r; i++) {
-        c = c * i;
-    }
+    for (int i = 1; i <= r; i++) 
+      { c = c * i; }
 
     int johab = a / (b * c);
 
-
-
     int d = 1;
-    for (int i = 1; i <= (n + r - 1); i++) {
-        d = d * i;
-    }
+    for (int i = 1; i <= (n + r - 1); i++) 
+      { d = d * i; }
 
     int e = 1;
-    for (int i = 1; i <= (n - 1); i++) {
-        e = e * i;
-    }
+    for (int i = 1; i <= (n - 1); i++)
+     { e = e * i; }
 
     int jjohab = d / (e * c);
-
-
 
     printf("\nresult\n");
     printf("nP r = %d\n", sunyul);
