@@ -394,12 +394,12 @@ int selectdifficulty(int* missrate, int* strikerate)// 난이도를 선택하는
 
 int aipitch(int selectcount[], int strikerate)// 알고리즘부분이다
 {
-    int strikezone[9];
+    int strikezone[9]=
     {
         7, 8, 9,
-            12, 13, 14,
-            17, 18, 19
-            ;// 이부분에 ;을 안썼고 왜 있어야 하는지 몰라서 ai를 통해 배웠다// 안 부분을 연산식 처럼 봐서 연산식을 끝내겠다 선언해야 하기 때문이다
+       12, 13, 14,
+       17, 18, 19
+        
     };
 
     int ballzone[16] =
